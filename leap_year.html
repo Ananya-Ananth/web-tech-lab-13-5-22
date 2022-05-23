@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[]
+        let brr=[]
+        let j=0
+        let n=prompt("enter size of array");
+        for(let i=0;i<n;i++){
+            arr[i]=prompt("enter the year")
+            let temp=parseInt(arr[i])
+            if((temp%4==0 && temp%100!=0) ||(temp%100==0 && temp%400==0)){
+                brr[j]=temp;
+                j++;
+            }
+        }
+        for(let i=0;i<j;i++){
+            alert(brr+"is a leap year")
+        }
+        
+    </script>
+</body>
+</html>
